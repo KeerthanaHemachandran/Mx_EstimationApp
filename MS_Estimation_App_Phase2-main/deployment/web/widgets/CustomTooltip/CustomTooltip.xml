@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="CustomTooltip.widget.CustomTooltip" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>CustomTooltip</name>
+    <description></description>
+
+    <icon>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</icon>
+
+    <properties>
+        <property key="tooltipClassName" type="string" required="true">
+            <caption>Target element classname</caption>
+            <category>Appearance</category>
+            <description>The tooltip will be connected to the element of which the Class property corresponds to the specified value and is on the same level as the target element.
+
+* To make sure you target the right element, place the element and the CustomTooltip widget in the same container.</description>
+        </property>
+        <property key="tooltipMessageString" type="translatableString" required="false">
+            <caption>Default text</caption>
+            <category>Data source</category>
+            <description>Text being displayed when no data source microflow is defined.</description>
+        </property>
+        <property key="tooltipColor" type="string" required="false">
+             <caption>Tooltip Color</caption>
+            <category>Appearance</category>
+            <description>The color you want your tooltip to have(Hex code).</description>
+        </property>
+        <property key="tooltipTextColor" type="string" required="false">
+             <caption>Tooltip Text Color</caption>
+            <category>Appearance</category>
+            <description>The color you want your tooltip text to have.</description>
+        </property>
+        <property key="tooltipRenderHTML" type="boolean" defaultValue="false">
+            <caption>Render HTML</caption>
+            <category>Appearance</category>
+            <description>Renders the tooltip content as HTML</description>
+        </property>
+        <property key="tooltipLocation" type="enumeration" defaultValue="top">
+            <caption>Tooltip position</caption>
+            <category>Appearance</category>
+            <description>The location of the tooltip relative to the target element.</description>
+            <enumerationValues>
+                <enumerationValue key="top">Top</enumerationValue>
+                <enumerationValue key="left">Left</enumerationValue>
+                <enumerationValue key="bottom">Bottom</enumerationValue>
+                <enumerationValue key="right">Right</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="tooltipMode" type="enumeration" defaultValue="hover">
+            <caption>Tooltip mode</caption>
+            <category>Appearance</category>
+            <description>When to show the tooltip.</description>
+            <enumerationValues>
+                <enumerationValue key="hover">On hover, focus</enumerationValue>
+                <enumerationValue key="focus">On focus</enumerationValue>
+                <enumerationValue key="click">On click</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="tooltipMessageMicroflow" type="microflow" required="false">
+            <caption>Tooltip source Microflow</caption>
+            <category>Data source</category>
+            <description>Return value: Text to display in tooltip.</description>
+            <returnType type="String" />
+        </property>
+    </properties>
+</widget>

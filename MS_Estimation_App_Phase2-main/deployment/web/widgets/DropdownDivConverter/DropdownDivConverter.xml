@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="DropdownDivConverter.widget.DropdownDivConverter" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>DropdownDivConverter</name>
+    <description>The DropdownDivConverter converts a Mendix (div-)container into a - Bootstrap based - dropdown menu with a button. Simply create a container in Mendix with all the content you want in the dropdown menu and the DropdownDivConverter widget as it's last child. Everything you will have added then becomes the content of the dropdown menu.</description>
+
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAK9JREFUeNpilJWV/s8AAY2PHz9tAPL3A9kOUDFHKL0fSh8AqnEEqmkAsutBAkwMFAJGqGkMINtJ0QjTx0ANF+yHusCRRBeA9bEgBRipwAFmALKpBUBKgIDGD0DXToBxWJCiChxN0CjDZcgHJPWOGNEINPkCVOIDLs1QNXDABLVxPwFDsGkG68OakNAMwWozchgcwGUIMFAdkQxEBweolpAoSsossFwFFGAYkNwIEGAAHt5XWk5gQGoAAAAASUVORK5CYII=</icon>
+
+    <properties>
+        <property key="buttonTitle" type="string" defaultValue="" required="false">
+            <caption>Dropdown button label</caption>
+            <category>General</category>
+            <description>The label on the dropdown button. Note, can be overridden on the Data Source tab</description>
+        </property>
+        <property key="buttonGlyphicon" type="string" defaultValue="" required="false">
+            <caption>Glyphicon icon</caption>
+            <category>General</category>
+            <description>Add a Bootstrap glyphicon icon to the button by entering the glyphicon classname (e.g. 'glyphicon-user'). If left empty, no icon will be created.</description>
+        </property>
+        <property key="isDropUp" type="boolean" defaultValue="false" required="true">
+            <caption>Drop up</caption>
+            <category>General</category>
+            <description>Use a drop up menu instead of a dropdown menu</description>
+        </property>
+        <property key="isRightAligned" type="boolean" defaultValue="false" required="true">
+            <caption>Right aligned menu</caption>
+            <category>General</category>
+            <description>Align the menu to the right for right-hand side usage of the view</description>
+        </property>
+        <property key="startOpen" type="boolean" defaultValue="false" required="true">
+            <caption>Start open</caption>
+            <category>General</category>
+            <description>Will the menu be open on load?</description>
+        </property>
+        <property key="autoClose" type="boolean" defaultValue="true" required="true">
+            <caption>Menu self-close</caption>
+            <category>General</category>
+            <description>If set to true: clicking on the menu or it's buttons will close the dropdown menu.</description>
+        </property>
+        <property key="buttonSize" type="enumeration" defaultValue="default">
+            <caption>Button size</caption>
+            <category>Appearance</category>
+            <description>The size of the dropdown button</description>
+            <enumerationValues>
+                <enumerationValue key="lg">large</enumerationValue>
+                <enumerationValue key="default">default</enumerationValue>
+                <enumerationValue key="sm">small</enumerationValue>
+                <enumerationValue key="xs">extra small</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="buttonType" type="enumeration" defaultValue="default">
+            <caption>Button type</caption>
+            <category>Appearance</category>
+            <description>The (bootstrap-) type of the dropdown button</description>
+            <enumerationValues>
+                <enumerationValue key="default">default</enumerationValue>
+                <enumerationValue key="primary">primary</enumerationValue>
+                <enumerationValue key="success">success</enumerationValue>
+                <enumerationValue key="info">info</enumerationValue>
+                <enumerationValue key="warning">warning</enumerationValue>
+                <enumerationValue key="danger">danger</enumerationValue>
+                <enumerationValue key="link">link</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="contextObject" type="entity" required="false" allowNonPersistableEntities="true">
+            <caption>Context object</caption>
+            <category>Data Source</category>
+            <description>The entity required for the microflow or dynamic label</description>
+        </property>
+        <property key="dynamicButtonTitleAttribute" type="attribute" entityProperty="contextObject" required="false">
+            <caption>Dynamic button label</caption>
+            <category>Data Source</category>
+            <description>The attribute that sets the label on the dropdown button. If used, the static value on the general tab will be overridden.</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+<!--
+        <property key="picture" type="image">
+            <caption>Picture</caption>
+            <category>Data Source</category>
+            <description>Select an image to add.</description>
+        </property>
+-->
+<!--
+  <property key="messageMicroflow" type="microflow" required="false">
+ <caption>Message Microflow</caption>
+ <category>Data Source</category>
+ <description>Return value: the message to show.</description>
+ <returnType type="String" />
+</property>
+-->
+        <property key="splitButtonActive" type="boolean" defaultValue="false" required="true">
+            <caption>Split button dropdown</caption>
+            <category>Split button</category>
+            <description>Create a split button dropdown which has an extra button with microflow. Note: the label for the dropdown will be used for this button.</description>
+        </property>
+        <property key="simpleSplitButtonClicked" type="microflow" required="false" defaultValue="">
+            <caption>Simple Microflow</caption>
+            <category>Split button</category>
+            <description>A simple microflow without a needed entity which is triggered if the main split button is clicked.</description>
+            <returnType type="Boolean"></returnType>
+        </property>
+        <property key="splitButtonClicked" type="microflow" required="false" defaultValue="" entityProperty="contextObject">
+            <caption>Microflow</caption>
+            <category>Split button</category>
+            <description>A entity driven microflow which is triggered if the main split button is clicked. Note that the Context Object from the Data Source tab is required.</description>
+            <returnType type="Object" entityProperty="contextObject"></returnType>
+        </property>
+    </properties>
+</widget>
+

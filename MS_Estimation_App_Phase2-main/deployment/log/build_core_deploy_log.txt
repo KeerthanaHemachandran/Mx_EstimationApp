@@ -1,0 +1,9 @@
+﻿Buildfile: C:\Users\563315\Documents\Mendix\MS_Estimation_App_Phase2-main\deployment\build_core.xml
+
+deploy:
+    [unzip] Expanding: C:\Program Files\Mendix\7.6.0\modeler\deployment.mxz into C:\Users\563315\Documents\Mendix\MS_Estimation_App_Phase2-main\deployment
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
+

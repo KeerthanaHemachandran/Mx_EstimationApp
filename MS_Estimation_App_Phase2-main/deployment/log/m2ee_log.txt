@@ -1,0 +1,8 @@
+[rtlauncher:container$] INFO Evictions for component 'project-userlib':
+Evicted C:\Users\563315\Documents\Mendix\MS_Estimation_App_Phase2-main\deployment\model\lib\userlib\openid4java-0.9.8.jar by C:\Users\563315\Documents\Mendix\MS_Estimation_App_Phase2-main\deployment\model\lib\userlib\openid4java-1.0.0.jar.
+[rtlauncher:container$] INFO Container start took 5274. Ready to accept admin requests.
+Nov 21, 2017 6:05:30 PM java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+
+
+

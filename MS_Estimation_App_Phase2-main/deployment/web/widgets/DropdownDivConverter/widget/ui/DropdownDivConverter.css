@@ -1,0 +1,184 @@
+.dropdown-div-converter .dropdown-button {
+    display: block;
+}
+
+.dropdown-div-converter .dropdown-button .caret {
+    margin-left:5px;
+}
+
+.dropdown-div-converter button + .dropdown-button .caret {
+    margin-left:0;   
+}
+
+.dropdown-div-converter > .dropdown-menu {
+    display: none;
+    width: 200px;
+}
+.dropdown-menu:before {
+  position: absolute;
+    top: -12px;
+    left: 30px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid #ccc;
+    border-left: 7px solid transparent;
+    /* border-bottom-color: rgba(0, 0, 0, 0.2); */
+    content: '';
+}
+
+.dropdown-menu:after {
+  position: absolute;
+    top: -11px;
+    left: 31px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    border-left: 6px solid transparent;
+    content: '';
+}
+.main-navigation ul ul:before {
+    content:"";
+    position: absolute;
+    right: 11px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fae0bb transparent;
+    z-index:9999;
+}
+.main-navigation ul ul:after {
+    content:"";
+    position: absolute;
+    right: 4px;
+    top: -22px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 17px 17px 17px;
+    border-color: transparent transparent #ffffff transparent;
+    z-index:9998;
+}
+
+.dropdown-div-converter.open > .dropdown-menu {
+    display: block; 
+    padding: 20px;
+}
+
+.dropdown-div-converter button .glyphicon {
+    margin-right: 0.8em;
+}
+
+/* for bootstrap versions below 3.1 */
+.dropdown-div-converter .dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+.profilemenu-html body {
+  padding: 8px 5px;
+  margin: 0;
+}
+
+.profilemenu {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 1px solid #cbcbcb;
+  background-color: #fdfdfd;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.profilemenu:after, .profilemenu:before {
+  position: absolute;
+  right: 15px;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  content: " ";
+  pointer-events: none;
+}
+.profilemenu:after {
+  margin-right: 0;
+  border-width: 7px 10px;
+  border-color: rgba(253, 253, 253, 0);
+  border-bottom-color: #fdfdfd;
+}
+.profilemenu:before {
+  margin-right: -1px;
+  border-width: 8px 11px;
+  border-color: rgba(203, 203, 203, 0);
+  border-bottom-color: #cbcbcb;
+}
+.profilemenu .content {
+  padding: 20px;
+}
+.profilemenu .content .avatar {
+  border-radius: 30px;
+  width: 64px;
+  height: auto;
+}
+.profilemenu .content .username {
+  overflow: hidden;
+  margin: 5px 0;
+  color: #555;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+.profilemenu .content .emailaddress {
+  overflow: hidden;
+  margin: 5px 0;
+  color: #a9a9a9;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: normal;
+}
+.profilemenu .footer {
+  padding: 5px 0;
+  border-top: 1px solid #cbcbcb;
+  background-color: #f5f5f5;
+}
+.profilemenu .footer a {
+  display: block;
+  margin: 15px 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+.profilemenu .footer a:hover {
+  text-decoration: underline;
+}
+
+.profilemenubutton-html,
+.profilemenubutton-html body,
+.appswitcherbutton-html,
+.appswitcherbutton-html body {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.profilemenubutton .menubutton-imagewrapper img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+   }
+.dropdown-menu {
+    margin: 20px 0 0 !important;    
+}
+
